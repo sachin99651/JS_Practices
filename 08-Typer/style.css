@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; 
+  color: #f8fafc;
+  font-family: 'Courier New', Courier, monospace; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.typed-text {
+  color: #38bdf8; 
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #f8fafc;
+  margin-left: 0.1rem;
+  animation: blink 0.7s infinite; 
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+  }
+}

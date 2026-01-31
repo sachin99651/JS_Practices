@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #0f172a; /* Clean dark blue-grey */
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  /* 'auto-fill' makes it scale as you add more projects */
+  /* 150px is the minimum size for each square */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 800px; /* Keeps the grid from getting too wide */
+}
+
+.wrapper a {
+  background: #1e293b;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Minimal hover effect */
+.wrapper a:hover {
+  background: #334155;
+  color: #ffffff;
+  border-color: #64748b;
+}
+
+/* Mobile optimization */
+@media (max-width: 400px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr); /* Force 2 columns on tiny screens */
+    gap: 10px;
+  }
+}

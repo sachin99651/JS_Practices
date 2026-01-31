@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617; 
+  color: #f8fafc;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  text-align: center;
+  background-color: #1e293b;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid #334155;
+  min-width: 300px;
+}
+
+#banner h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+#clock h2 {
+  font-size: 4rem;
+  margin: 0;
+  color: #fbbf24;
+}
+
+@media (max-width: 450px) {
+  #clock h2 {
+    font-size: 2.5rem;
+  }
+  
+  .center {
+    padding: 2rem;
+  }
+}

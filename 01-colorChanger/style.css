@@ -1,0 +1,67 @@
+/* General layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Default dark background */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.4s ease; /* Smooth transition when changing colors */
+}
+
+.canvas {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: 400;
+  color: #cbd5e1;
+}
+
+h2 span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50%; /* Makes the buttons circular */
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.15); /* Slight pop on hover */
+}
+
+/* Specific button colors */
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: white;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
